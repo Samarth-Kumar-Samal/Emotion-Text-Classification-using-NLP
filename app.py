@@ -5,7 +5,7 @@ import pandas as pd
 import joblib
 
 # Loading the model
-model = joblib.load(r'models\text-emotion-classifier.joblib')
+model = joblib.load('text-emotion-classifier.joblib')
 
 # Predicting the emotions
 def predict_emotions(docx):
@@ -28,8 +28,8 @@ def main():
     st.title("Emotion Classifier App")
     
     with st.form(key='emotion_clf_form'):
-            raw_text = st.text_area("Type Here")
-            submit_text = st.form_submit_button(label='Submit')
+            raw_text = st.text_area("Type the statement here")
+            submit_text = st.form_submit_button(label='Predict')
             
             if submit_text:
                  col1, col2 = st.columns(2)
