@@ -2,11 +2,10 @@ import streamlit as st
 import altair as alt
 import numpy as np
 import pandas as pd
-import pickle
+import joblib
 
 # Loading the model
-with open(r'.\models\Text-Emotion-Classifier.pkl', 'rb') as model_file:
-    model = pickle.load(model_file)
+model = joblib.load('..\\models\\text-emotion-classifier.joblib')
 
 # Predicting the emotions
 def predict_emotions(docx):
