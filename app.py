@@ -27,7 +27,7 @@ emotions_emoji_dict = {'surprise': '😲', 'love': '❤️',
 # Main Application
 def main():
     st.title("Emotion Classifier App")
-    st.subheader("Home-Emotion In Text")
+    
     with st.form(key='emotion_clf_form'):
             raw_text = st.text_area("Type Here")
             submit_text = st.form_submit_button(label='Submit')
