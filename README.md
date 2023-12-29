@@ -5,6 +5,8 @@
 ## Description :
 The Text Emotion Classification project leverages Python, Machine Learning, NLP, and Streamlit. This endeavor involves training a model to classify emotions in text, creating a streamlined user interface with Streamlit. Harnessing NLP techniques, the system analyzes inputted text, accurately categorizing it into various emotions. The user-friendly interface allows seamless interaction, making this tool invaluable for sentiment analysis across diverse applications.
 
+Application Link : [Web Application](https://sam-text-emotion-app.streamlit.app/)
+
 
 
 ## Software and Tools Requirements
